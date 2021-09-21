@@ -1,0 +1,247 @@
+@charset "utf-8";
+::-webkit-scrollbar {display: none;}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Cabecera de la pagina*/
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #4C5B66;
+    width: 100vw;
+    height: 20vh;
+    overflow: hidden;
+}
+
+.header-img{
+    padding: 30px 30px 0px 100px;
+}
+
+.menu ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.menu li{
+	display: inline;
+	padding: 0 40px 0px;
+    margin-top: 40px;
+}
+
+ul{
+	display: flex;
+    float: right;
+}
+
+/*Contenido de información*/
+.content {
+    display: grid;
+    background-color: #4C5B66;
+    grid-template-areas: "celda1 celda2 celda2"
+                         "celda1 celda2 celda2"
+                         "celda1 celda3 celda3";
+}
+
+/*Imagen de celular*/
+.image {
+    object-fit: cover;
+    grid-area: celda1;
+    margin-left: 10vh;
+}
+
+.image img {
+    height: 100%;
+}
+
+/*Texto*/
+.info {
+    margin-top: 5vh;
+    grid-area: celda2;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.info h1 {
+    font-size: 35px;
+    width: 55vh;
+}
+
+.info p {
+    width: 60vh;
+}
+
+#text-gray {
+    color: rgb(175, 175, 175);
+}
+
+/*Botones con texto*/
+.options {
+    grid-area:celda3;
+}
+.options p {
+    color: white;
+}
+
+.options button {
+    height: 35px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #2d87cc;
+    border-style: none;
+}
+
+.options button a {
+    text-decoration: none;
+    color: white;
+    font-style: inherit;
+}
+
+.options a, .options i {
+    text-decoration: underline;
+    color: white;
+    font-style: inherit;
+}
+
+/*Logos de partners*/
+
+.partners {
+    height: 70px;
+    background-color: #d8d8d8;
+    border-style: unset;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 180px;
+}
+
+.logos img {
+    margin-top: 15px;
+}
+
+/*Información de servicios*/
+.information {
+    display: grid;
+    background-color: white;
+    grid-template-areas: "celda1 celda2 celda3";
+    margin-top: 80px;
+    margin-left: 4%;
+    text-align: center;
+    width: 90%;
+    gap: 45px;
+}
+
+.interfaces {
+    grid-area: celda1;
+}
+
+.designs {
+    grid-area: celda2;
+}
+
+.development {
+    grid-area: celda3;
+}
+
+.interfaces h1, .designs h1, .development h1 {
+    color: rgb(68, 68, 68);
+}
+
+.interfaces p, .designs p, .development p {
+    color: gray;
+}
+
+.interfaces button, .designs button, .development button {
+    height: 30px;
+    width: 100px;
+    background-color: rgb(48, 101, 199);
+    border-style: none;
+}
+
+.interfaces a, .designs a, .development a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Contenido de proyectos*/
+
+.projects {
+    display: grid;
+    background-color: white;
+    grid-template-areas: "celda1 celda1 celda1 celda1"
+                        "celda2 celda3 celda4 celda5";
+    margin-top: 80px;
+    margin-left: 4%;
+    text-align: center;
+    width: 90%;
+    gap: 50px;
+}
+
+.title {
+    text-align: justify !important;
+    grid-area: celda1;
+    font-size: 20px;
+}
+
+.imgp1 {
+    grid-area: celda2;
+}
+
+.imgp2 {
+    grid-area: celda3;
+}
+
+.imgp3 {
+    grid-area: celda4;
+}
+
+.imgp4 {
+    grid-area: celda5;
+}
+
+.imgp1 img, .imgp2 img, .imgp3 img, .imgp4 img {
+    object-fit: cover;
+    width: 250px;
+    height: 150px;
+    border-style:ridge;
+}
+
+/*Contenido de discusión*/
+
+.discuss {
+    display: grid;
+    background-color: white;
+    grid-template-areas: "celda1 celda2"
+                        "celda1 celda2";
+    margin-top: 80px;
+    margin-left: 4%;
+    width: 90%;
+    gap: 20px;  
+}
+
+.blog {
+    grid-area: celda1;
+}
+
+.feed {
+    grid-area: celda2;
+}
+
+.our-work img{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}z
